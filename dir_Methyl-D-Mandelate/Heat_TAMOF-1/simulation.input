@@ -1,0 +1,88 @@
+SimulationType                   MC
+NumberOfCycles                   2500000
+NumberOfInitializationCycles     0
+NumberOfEquilibrationCycles      0
+PrintPropertiesEvery             100
+PrintEvery                       100
+RestartFile                      no
+
+ChargeMethod                     Ewald
+Ensemble                         NVT
+Forcefield                       Local
+
+Framework                        0
+FrameworkName                    LOL_scaled
+UseChargesFromCIFFile            yes
+RemoveAtomNumberCodeFromLabel    yes
+UnitCells                        1 1 1
+ReplicaUnitCells                 2 2 2
+ExternalTemperature              300.0
+
+Component 0 MoleculeName                   Methyl-D-Mandelate_all_0
+            MoleculeDefinition             Local
+            WidomProbability               1.0
+            FugacityCoefficient            1.0
+            ExtraFrameworkMolecule         no
+            CreateNumberOfMolecules        0
+
+Component 1 MoleculeName                   Methyl-D-Mandelate_all_1
+            MoleculeDefinition             Local
+            WidomProbability               1.0
+            FugacityCoefficient            1.0
+            ExtraFrameworkMolecule         no
+            CreateNumberOfMolecules        0
+
+
+Component 2 MoleculeName                   Methyl-D-Mandelate_all_2
+            MoleculeDefinition             Local
+            WidomProbability               1.0 
+            FugacityCoefficient            1.0
+            ExtraFrameworkMolecule         no
+            CreateNumberOfMolecules        0
+
+
+Component 3 MoleculeName                   Methyl-D-Mandelate_all_3
+            MoleculeDefinition             Local
+            WidomProbability                1.0
+            FugacityCoefficient            1.0
+            ExtraFrameworkMolecule         no
+            CreateNumberOfMolecules        0
+
+
+Component 4 MoleculeName                   Methyl-D-Mandelate_all_4
+            MoleculeDefinition             Local
+            WidomProbability                1.0
+            FugacityCoefficient            1.0
+            ExtraFrameworkMolecule         no
+            CreateNumberOfMolecules        0
+
+
+Component 5 MoleculeName                   Methyl-D-Mandelate_all_5
+            MoleculeDefinition             Local
+            WidomProbability                1.0
+            FugacityCoefficient            1.0
+            ExtraFrameworkMolecule         no
+            CreateNumberOfMolecules        0
+
+
+Component 6 MoleculeName                   Methyl-D-Mandelate_all_6
+            MoleculeDefinition             Local
+            FugacityCoefficient            1.0
+            WidomProbability                1.0
+            ExtraFrameworkMolecule         no
+            CreateNumberOfMolecules        0
+
+Component 7 MoleculeName                   Methyl-D-Mandelate_all_7
+            MoleculeDefinition             Local
+            WidomProbability                1.0
+            FugacityCoefficient            1.0
+            ExtraFrameworkMolecule         no
+            CreateNumberOfMolecules        0
+
+Component 8 MoleculeName                   Methyl-D-Mandelate_all_8
+            MoleculeDefinition             Local
+            WidomProbability                1.0
+            FugacityCoefficient            1.0
+            ExtraFrameworkMolecule         no
+            CreateNumberOfMolecules        0
+
