@@ -3,7 +3,7 @@ program histogram
  integer            :: n_datos = 0
  integer            :: n_boxs  = 60
  integer            :: ierr,i,j,k
- real               :: max_,min_,suma
+ real               :: max_,min_,suma,Z,boltzmann
  character (len=80) :: line
  real, allocatable  :: values(:),delta(:)
  logical            :: normalise = .false.
@@ -29,6 +29,8 @@ program histogram
  do j=1,n_boxs+1
   delta(j)=delta(j-1)+(max_-min_)/real(n_boxs)
  enddo
+ Z = sum(exp(-(values(1:n_datos)-min_)/2.49432))
+ boltzmann = sum( values(1:n_datos)*exp(-(values(1:n_datos)-min_)/2.49432)/Z )
  call make_histogram(values,delta,n_datos,n_boxs+1)
  close(111)
  deallocate(values)
@@ -58,7 +60,7 @@ program histogram
    write(6,*)'# adev,var:'
    write(6,*)'# deviation:',adev,var
    ! <E>= sum(E*p(E))/sum(p(E))
-   write(6,*)'# Boltzmann:', suma
+   write(6,*)'# Boltzmann:', boltzmann
  end subroutine make_histogram
 !
  subroutine moment(data,n,ave,adev,sdev,var,skew,curt)
