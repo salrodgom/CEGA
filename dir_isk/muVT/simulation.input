@@ -1,0 +1,41 @@
+SimulationType                   MC
+NumberOfCycles                   2500000
+NumberOfInitializationCycles     0
+NumberOfEquilibrationCycles      0
+PrintPropertiesEvery             10
+PrintEvery                       10
+ 
+ChargeMethod                     Ewald
+Forcefield                       Local
+Framework                        0
+FrameworkName                    ZIF-8_p1
+UseChargesFromCIFFile            yes
+RemoveAtomNumberCodeFromLabel    yes
+UnitCells                        1 1 1
+ReplicaUnitCells                 2 2 2
+ExternalTemperature              300.0
+ExternalPressure                  75.0
+
+Movies yes
+WriteMoviesEvery 100
+FlexibleFramework yes
+ 
+Component    0 MoleculeName isk_all_0
+  MoleculeDefinition             Local
+  MolFraction                  0.0003
+  FugacityCoefficient            1.0
+  SwapProbability                1.0
+  TranslationProbability         1.0
+  RotationProbability            1.0
+  ReinsertionProbability         1.0
+  ExtraFrameworkMolecule         no
+  CreateNumberOfMolecules        0
+
+Component 1 MoleculeName     Tip5p
+  MoleculeDefinition             Local
+  MolFraction                  0.9997
+  SwapProbability                1.0
+  TranslationProbability         1.0
+  RotationProbability            1.0
+  ReinsertionProbability         1.0
+  CreateNumberOfMolecules        0

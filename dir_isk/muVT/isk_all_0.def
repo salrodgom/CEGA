@@ -1,0 +1,60 @@
+# critical constants: Temperature [T], Pressure [Pa], and Acentric factor [-]
+0.0
+0.0
+1.0
+# Number Of Atoms
+ 21
+# Number of groups
+1
+# Flexibility (no)
+rigid
+# number of atoms
+ 21
+# atomic positions
+  0 C1       -2.8763306    -1.4093373    -0.0049663
+  1 C2       -4.2328806    -1.1808040    -0.0104794
+  2 C3       -4.7535305     0.1190167    -0.0090323
+  3 C4       -3.9322453     1.2240287    -0.0021155
+  4 C5       -2.5568545     1.0076598     0.0036052
+  5 C6       -2.0204124    -0.3056343     0.0022100
+  6 N7       -1.5182736     1.8902088     0.0112107
+  7 C8       -0.3382853     1.1913143     0.0152762
+  8 C9       -0.5984920    -0.1495019     0.0098572
+  9 H10      -2.4635479    -2.4064169    -0.0058913
+ 10 H11      -4.9132767    -2.0180640    -0.0159323
+ 11 H12      -5.8240142     0.2504896    -0.0133981
+ 12 H13      -4.3378439     2.2223921    -0.0010187
+ 13 H14      -1.5954332     2.8964915     0.0147055
+ 14 H15       0.6223475     1.6830639     0.0233677
+ 15 O16       0.2807423    -1.2278997     0.0114269
+ 16 S17       1.8471965    -0.9983041     0.0016950
+ 17 O18       2.4054241    -2.3227208     0.0004696
+ 18 O19       2.1950192    -0.2003982     1.1785579
+ 19 O20       2.1806333    -0.2038876    -1.1816657
+ 20 K21       3.1628177     1.5394808    -0.0103876
+#
+   0  21   0   0   0   0   0   0   0   0   0   0   0   0
+Bond stretch:
+   0    1 RIGID_BOND # C1   C2  
+   0    5 RIGID_BOND # C1   C6  
+   0    9 RIGID_BOND # C1   H10 
+   1    2 RIGID_BOND # C2   C3  
+   1   10 RIGID_BOND # C2   H11 
+   2    3 RIGID_BOND # C3   C4  
+   2   11 RIGID_BOND # C3   H12 
+   3    4 RIGID_BOND # C4   C5  
+   3   12 RIGID_BOND # C4   H13 
+   4    5 RIGID_BOND # C5   C6  
+   4    6 RIGID_BOND # C5   N7  
+   5    8 RIGID_BOND # C6   C9  
+   6    7 RIGID_BOND # N7   C8  
+   6   13 RIGID_BOND # N7   H14 
+   7    8 RIGID_BOND # C8   C9  
+   7   14 RIGID_BOND # C8   H15 
+   8   15 RIGID_BOND # C9   O16 
+  15   16 RIGID_BOND # O16  S17 
+  16   17 RIGID_BOND # S17  O18 
+  16   18 RIGID_BOND # S17  O19 
+  16   19 RIGID_BOND # S17  O20 
+Number of config moves
+0

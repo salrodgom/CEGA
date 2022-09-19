@@ -1,0 +1,36 @@
+
+Geometry = GenFormat {
+ <<< geo.gen
+}
+
+Hamiltonian = xTB {
+  Method = "GFN2-xTB"
+  kPointsAndWeights = SuperCellFolding {
+    2   0   0
+    0   2   0
+    0   0   2
+    0.5 0.5 0.5
+  }
+}
+Driver = GeometryOptimization {
+  LatticeOpt = No
+}
+Parallel = {
+  Groups = 1
+  UseOmpThreads = Yes
+  Blacs = BlockSize {
+32
+}
+}
+Analysis = {
+  WriteEigenvectors = Yes
+  WriteBandOut = Yes
+  MullikenAnalysis = Yes
+  WriteNetCharges = Yes
+}
+Options = {
+  WriteDetailedOut = Yes
+  TimingVerbosity = 1
+  WriteChargesAsText = Yes
+}
+

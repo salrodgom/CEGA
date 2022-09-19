@@ -1,0 +1,154 @@
+|===============================================================================
+|
+|  DFTB+ release 22.1
+|
+|  Copyright (C) 2006 - 2022  DFTB+ developers group
+|
+|===============================================================================
+|
+|  When publishing results obtained with DFTB+, please cite the following
+|  reference:
+|
+|  * DFTB+, a software package for efficient approximate density functional
+|    theory based atomistic simulations, J. Chem. Phys. 152, 124101 (2020).
+|    [doi: 10.1063/1.5143190]
+|
+|  You should also cite additional publications crediting the parametrization
+|  data you use. Please consult the documentation of the SK-files for the
+|  references.
+|
+|===============================================================================
+
+Reading input file 'dftb_in.hsd'
+Parser version: 11
+
+--------------------------------------------------------------------------------
+
+
+Processed input in HSD format written to 'dftb_pin.hsd'
+
+Starting initialization...
+--------------------------------------------------------------------------------
+WARNING!
+-> Dipole printed for extended system : value printed is not well defined
+MPI processes:               1
+OpenMP threads:              6
+BLACS orbital grid size:     1 x 1
+BLACS atom grid size:        1 x 1
+Chosen random seed:          30786453
+Mode:                        Static calculation
+Self consistent charges:     Yes
+SCC-tolerance:                 0.100000E-04
+Max. scc iterations:                    100
+Shell resolved Hubbard:      Yes
+Spin polarisation:           No
+Nr. of up electrons:           384.000000
+Nr. of down electrons:         384.000000
+Periodic boundaries:         Yes
+Electronic solver:           Relatively robust
+Mixer:                       Broyden mixer
+Mixing parameter:                  0.200000
+Maximal SCC-cycles:                     100
+Nr. of chrg. vec. in memory:            100
+tblite library version:      0.2.1
+-> parametrization:          GFN2-xTB
+-> repulsion:                Yes
+-> dispersion:               Yes
+-> halogen bonding:          No
+-> electrostatics:           Yes
+   -> isotropic:             Yes
+   -> anisotropic:           Yes
+   -> third-order:           Yes
+Electronic temperature:              0.950045E-03 H      0.258520E-01 eV
+Initial charges:             Set automatically (system chrg:   0.000E+00)
+Included shells:             C:  s, p
+                             H:  s
+                             N:  s, p
+                            Zn:  s, p
+K-points and weights:           1:  0.250000  0.250000  0.250000     0.250000
+                                2:  0.250000  0.250000  0.750000     0.250000
+                                3:  0.250000  0.750000  0.250000     0.250000
+                                4:  0.250000  0.750000  0.750000     0.250000
+
+K-points in absolute space:     1:  0.007786  0.007786  0.007786
+                                2:  0.007786  0.007786  0.023358
+                                3:  0.007786  0.023358  0.007786
+                                4:  0.007786  0.023358  0.023358
+
+Extra options:
+                             Mulliken analysis
+Force type                   original
+                             Eigenvector printing
+
+--------------------------------------------------------------------------------
+
+***  Geometry step: 0
+
+ iSCC Total electronic   Diff electronic      SCC error    
+    1    0.00000000E+00    0.00000000E+00    0.16333448E+01
+    2   -0.40901408E+03   -0.40901408E+03    0.10277974E+01
+    3   -0.41366183E+03   -0.46477554E+01    0.57935959E+00
+    4   -0.41520516E+03   -0.15433300E+01    0.36264555E+00
+    5   -0.41531891E+03   -0.11374741E+00    0.25697037E-01
+    6   -0.41560563E+03   -0.28671472E+00    0.23673654E-01
+    7   -0.41561015E+03   -0.45267010E-02    0.94011352E-02
+    8   -0.41561057E+03   -0.42024603E-03    0.55145426E-02
+    9   -0.41561096E+03   -0.38697767E-03    0.95082522E-02
+   10   -0.41561068E+03    0.28410426E-03    0.31707267E-02
+   11   -0.41561105E+03   -0.37081574E-03    0.41474090E-03
+   12   -0.41561109E+03   -0.46975247E-04    0.18473346E-03
+   13   -0.41561109E+03    0.42518366E-07    0.12187373E-03
+   14   -0.41561109E+03    0.35046355E-07    0.51316243E-04
+   15   -0.41561109E+03   -0.89280491E-07    0.11465137E-04
+   16   -0.41561109E+03   -0.10643475E-07    0.45344630E-05
+
+Total Energy:                     -415.6110945009 H       -11309.3533 eV
+Extrapolated to 0K:               -415.6110945009 H       -11309.3533 eV
+Total Mermin free energy:         -415.6110945009 H       -11309.3533 eV
+Force related energy:             -415.6110945009 H       -11309.3533 eV
+
+Volume:                              0.331019E+05 au^3   0.490520E+04 A^3
+Pressure:                           -0.961550E-05 au    -0.282898E+09 Pa
+>> Charges saved for restart in charges.dat
+
+total energy  -4.1561109E+02 H       energy change -4.1561109E+02 H
+gradient norm  1.5124827E-03 H/a0    max. gradient  1.7174192E-04 H/a0
+step length    0.0000000E+00 a0      max. step      0.0000000E+00 a0
+
+--------------------------------------------------------------------------------
+
+***  Geometry step: 1
+
+ iSCC Total electronic   Diff electronic      SCC error    
+    1   -0.41561109E+03    0.00000000E+00    0.16833196E-03
+    2   -0.41561110E+03   -0.13602107E-05    0.10889727E-03
+    3   -0.41561110E+03   -0.60906018E-07    0.86736559E-04
+    4   -0.41561110E+03   -0.49191726E-08    0.29388170E-04
+    5   -0.41561110E+03   -0.11368684E-10    0.96447128E-05
+
+Total Energy:                     -415.6110959273 H       -11309.3533 eV
+Extrapolated to 0K:               -415.6110959273 H       -11309.3533 eV
+Total Mermin free energy:         -415.6110959273 H       -11309.3533 eV
+Force related energy:             -415.6110959273 H       -11309.3533 eV
+
+Volume:                              0.331019E+05 au^3   0.490520E+04 A^3
+Pressure:                           -0.959837E-05 au    -0.282394E+09 Pa
+>> Charges saved for restart in charges.dat
+
+total energy  -4.1561110E+02 H       energy change -1.4264568E-06 H
+gradient norm  7.4308412E-04 H/a0    max. gradient  8.5217983E-05 H/a0
+step length    1.5124827E-03 a0      max. step      1.7174192E-04 a0
+
+Geometry converged
+
+--------------------------------------------------------------------------------
+DFTB+ running times                          cpu [s]             wall clock [s]
+--------------------------------------------------------------------------------
+Global initialisation                  +       0.02 (  0.0%)       0.00 (  0.0%)
+Pre-SCC initialisation                 +      14.24 (  8.5%)       2.20 (  7.8%)
+SCC                                    +     133.56 ( 79.8%)      22.93 ( 81.4%)
+Post-SCC processing                    +      19.61 ( 11.7%)       3.03 ( 10.8%)
+--------------------------------------------------------------------------------
+Missing                                +       0.00 (  0.0%)       0.00 (  0.0%)
+Total                                  =     167.45 (100.0%)      28.17 (100.0%)
+--------------------------------------------------------------------------------

@@ -1,0 +1,4 @@
+/home/salvador/anaconda3/envs/dftb/lib/python3.9/site-packages/ase/io/cif.py:401: UserWarning: crystal system 'cubic' is not interpreted for space group Spacegroup(212, setting=1). This may result in wrong setting!
+  warnings.warn(
+Terminated
+(standard_in) 2: syntax error

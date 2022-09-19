@@ -95,8 +95,8 @@ program xyzensemble2defs
  allocate(ConnectedAtoms(n_atoms,n_atoms))
  allocate(DistanceMatrix(n_atoms,n_atoms))
  allocate( TopologyMatrix(n_atoms,11) )
- allocate(Energy(1:n_atoms))
- allocate(MolFraction(1:n_atoms))
+ allocate(Energy(1:n_files))
+ allocate(MolFraction(1:n_files))
  write(6,*) n_files, 'configurations'
  rewind(100)
  do i=1,n_files
